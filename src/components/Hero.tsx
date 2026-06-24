@@ -1,7 +1,7 @@
 "use client";
 
 import { motion } from "framer-motion";
-import { ArrowRight, Download, Github, Linkedin, Mail, Terminal } from "lucide-react";
+import { ArrowRight, Github, Linkedin, Mail, Terminal } from "lucide-react";
 import TypingEffect from "./TypingEffect";
 
 export default function Hero() {
@@ -129,11 +129,11 @@ export default function Hero() {
 
               <a
                 href="/resume.pdf"
-                download="Thiruselvan_Resume.pdf"
-                className="w-full sm:w-auto px-6 py-3 rounded-xl font-medium cursor-pointer text-blue-600 dark:text-purple-400 bg-blue-50 dark:bg-purple-950/20 border border-blue-200 dark:border-purple-800/30 hover:bg-blue-100 dark:hover:bg-purple-950/45 hover:scale-103 active:scale-97 flex items-center justify-center space-x-2 transition-all"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="btn"
               >
-                <Download size={18} />
-                <span>Resume</span>
+                Download Resume
               </a>
             </motion.div>
 

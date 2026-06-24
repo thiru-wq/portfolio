@@ -148,3 +148,48 @@
   color: #8b5cf6;
   margin-left: 2px;
 }
+
+/* Custom Button Class */
+.btn {
+  width: 100%;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0.75rem 1.5rem;
+  border-radius: 0.75rem;
+  font-weight: 500;
+  cursor: pointer;
+  color: #2563eb;
+  background-color: rgba(59, 130, 246, 0.05);
+  border: 1px solid rgba(59, 130, 246, 0.2);
+  transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+  box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.05);
+}
+
+.btn:hover {
+  background-color: rgba(59, 130, 246, 0.1);
+  transform: scale(1.05);
+  box-shadow: 0 4px 6px -1px rgba(59, 130, 246, 0.1);
+}
+
+.btn:active {
+  transform: scale(0.95);
+}
+
+.dark .btn {
+  color: #c084fc;
+  background-color: rgba(168, 85, 247, 0.08);
+  border: 1px solid rgba(168, 85, 247, 0.2);
+}
+
+.dark .btn:hover {
+  background-color: rgba(168, 85, 247, 0.15);
+  box-shadow: 0 4px 6px -1px rgba(168, 85, 247, 0.2);
+}
+
+@media (min-width: 640px) {
+  .btn {
+    width: auto;
+  }
+}
+
